@@ -1,0 +1,129 @@
+:root{
+   --color1:  rgb(163, 163, 228);
+   --color2: rgb(43, 160, 43);
+    --color3: rgb(252, 232, 209);
+    --color4:rgb(170, 108, 108);
+    --color5:rgb(239, 197, 237);
+}
+*{
+    font-family: "Josefin Sans", sans-serif;
+}
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(WhatsApp\ Image\ 2024-06-18\ at\ 6.18.05\ AM\ \(1\).jpeg);
+}
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    border-radius: 0.5rem;
+    background-color:var(--color3);
+    box-sizing: border-box;
+    font-size: 24px;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    color: black;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: var(--color5);
+    font-weight: 600;
+  }
+  .radio-inputs .radio input + .name:hover {
+    color: #fff;
+  }
+  .radio-inputs .radio input:checked + .name:hover {
+    color: #1d1d29;
+  }
+  
+  .radio-inputs .radio input:checked + .name::after,
+  .radio-inputs .radio input:checked + .name::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color3);
+    bottom: 0;
+  }
+  
+  .radio-inputs .radio input:checked + .name::after {
+    right: -10px;
+    border-bottom-left-radius: 300px;
+    box-shadow: -3px 3px 0px 3px var(--color5);
+  }
+  .radio-inputs .radio input:checked + .name::before {
+    left: -10px;
+    border-bottom-right-radius: 300px;
+    box-shadow: 3px 3px 0px 3px var(--color5);
+  }
+  img{
+    height: 40px ;
+    width: 50px;
+    border-radius: 5px;
+    float: right;
+  }
+  div{
+    float: right;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  div:hover{
+    opacity: 0.7;
+  }
+.main-content {
+    
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 200px;
+    margin-top:200px;
+    position:relative;
+    
+}
+.main-content button {
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--color1);
+    border-radius: 10px;
+}
+aside{
+background-image: url(girafa-publi.jpg);
+  height: 100%;
+    position: fixed;
+    margin-top:20px;
+    border: 2px solid black;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border: 2px solid black;
+    background-image: url(canicas.jpg);
+}   
+#Contacto{
+  padding: 40px 40px;
+  margin-top: 50%;
+  margin-bottom: 10%;
+}
